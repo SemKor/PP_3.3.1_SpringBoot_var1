@@ -26,7 +26,7 @@
         <form th:action="@{/editUser(id=${user.id})}">
           <button type="submit" th:name="id" th:value="${user.id}">Update User</button>
         </form>
-        <form th:action="@{/deleteUser(id=${user.id})}">
+        <form th:action="@{/deleteUser(id=${user.id})}" method="post">
           <button type="submit" th:name="id" th:value="${user.id}">Delete User</button>
         </form>
       </td>
